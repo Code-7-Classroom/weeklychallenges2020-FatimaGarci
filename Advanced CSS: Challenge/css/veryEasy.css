@@ -1,0 +1,21 @@
+#checkerboard {
+    border: solid  #010101 3px;
+    width: 800px;
+    height: 800px;
+    /* align-content */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.black {
+    background-color: black;
+    height: 100px;
+    width: 100px;
+}
+
+.white {
+    background-color: white; 
+    height: 100px;
+    width: 100px;
+}

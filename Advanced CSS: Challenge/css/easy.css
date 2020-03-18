@@ -1,0 +1,29 @@
+div{
+    border: solid  #010101 4px;
+    height: 590px;
+    width: 976px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 110px;
+}
+.flag {
+    position: absolute;
+    width: 450px;
+    height: 317px;
+}
+
+.RedRow {
+    background-color: #D0283D;
+    height: 15.5px;
+    width: 945px;
+    display:block;
+    padding: 15px;
+
+}
+.whiteRow {
+    background-color: #FFFFFF;
+    height: 15px;
+    width: 945px;
+    display:block;
+    padding: 15px;
+}

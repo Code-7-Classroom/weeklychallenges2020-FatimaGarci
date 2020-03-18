@@ -1,0 +1,38 @@
+body{
+    background-color: #D5D3CF;
+.newspaper{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 31% 31% 31%;
+    grid-gap: 50px;
+    font-family: 'Noto Sans', sans-serif;
+
+    h2{
+        text-align: center;
+    }
+    img{
+        height: 260px;
+        width: 370px;
+        padding: 0px 30px;
+    }
+
+
+
+p::Before{ 
+    content: "Lorem";
+    color: rgba(146, 64, 146, 0.931);
+    font-weight: bold;
+  }
+}
+}
+@font-face {
+    font-family: oof; 
+    src: url("/img/anglicantext.regular.ttf");}
+h1 {
+    font-size: 110px;
+    text-align: center;
+    font-family: oof;
+}
+  footer{
+    text-align: center;
+}
