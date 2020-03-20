@@ -1,0 +1,28 @@
+.calculator {
+  width: 900px;
+  height: auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 40px 300px;
+}
+
+.calculator p {
+  font-size: 50px;
+  font-weight: 40px;
+}
+
+.calculator input {
+  width: 300px;
+  height: 50px;
+}
+
+.calculator .btn {
+  width: 50px;
+  height: 30px;
+}
+/*# sourceMappingURL=style.css.map */
