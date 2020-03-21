@@ -1,48 +1,220 @@
-*{
-    margin: 0;
-    padding: 0;
-    /* box-sizing: border-box; */
-    }
-    a{
-    color: #333;
-    text-decoration: none;
-    }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* background-color: #24252A; */
+}
 
-    #navbar{
-    background-color: rgb(29, 18, 18);
-    color: #ffffff;
-    overflow: auto;
-    }
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(0, 0, 0, 0.5);
+}
 
-    #navbar a{
-    color: #ffffff;
-    }
+.logo {
+  width: 85px;
+  height: 55px;
+}
 
-    #navbar ul{
-    list-style: none;
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 55%;
+}
 
-    }
-    #navbar ul li{
-    float: left;
-    font-size: 20px;
-    }
-    /* #navbar{
-    width: 100%;
-    margin: auto;
-    text-align : center;
-    } */
-    #navbar ul li a{
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: aliceblue;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/* Mobile Part */
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: rgba(46, 46, 46, 0.424);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translate(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
     display: block;
-    padding: 20px;
-    padding: 50px 60px 0px 50px;
-    text-align: center;
-    }
-    .logo img{
-    width: 190px;
-    height: 140px;
-    /* padding: 10px; */
-    }
-    #navbar ul li a:hover,
-    #navbar ul li a.current{
-    color: #e18eff;
-    }
+  }
+}
+
+.nav-active {
+  transform: translate(0%)
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translate(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line1 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Slide Show */
+
+/* Parent wrapper to carousel. Width can be changed as needed. */
+
+.carousel-wrapper {
+  overflow: hidden;
+  width: 95%;
+  margin: auto;
+}
+
+/* Apply 'border-box' to 'box-sizing' so border and padding is included in the width and height. */
+
+.carousel-wrapper * {
+  box-sizing: border-box;
+}
+
+/* We'll be using the 'transform' property to move the carousel's items, so setting the 'transform-style' to 'preserve-3d' will make sure our nested elements are rendered properly in the 3D space. */
+
+.carousel {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+/* By default we're hiding items (except the initial one) until the JS initiates. Elements are absolutely positioned with a width of 100% (as we're styling for mobile first), letting the content's height dictate the height of the carousel. Our magic property here for all our animation needs is 'transition', taking the properties we wish to animate 'transform' and 'opacity', along with the length of time in seconds. */
+
+.carousel__photo{
+  opacity: 0;
+  position: absolute;
+  /* top: 0; */
+  width: 100%;
+  height: 50%;
+  margin: auto;
+  padding: 1rem 4rem;
+  z-index: 100;
+  transition: transform .5s, opacity .5s, z-index .5s;
+}
+
+/* Display the initial item and bring it to the front using 'z-index'. These styles also apply to the 'active' item. */
+
+.carousel__photo.initial, .carousel__photo.active {
+  opacity: 1;
+  position: relative;
+  z-index: 900;
+}
+
+/* Set 'z-index' to sit behind our '.active' item. */
+
+.carousel__photo.prev, .carousel__photo.next {
+  z-index: 800;
+}
+
+/* Translate previous item to the left */
+
+.carousel__photo.prev {
+  transform: translateX(-100%);
+}
+
+/* Translate next item to the right */
+
+.carousel__photo.next {
+  transform: translateX(100%);
+}
+
+/* Style navigation buttons to sit in the middle, either side of the carousel. */
+
+.carousel__button--prev, .carousel__button--next {
+  position: absolute;
+  top: 50%;
+  width: 3rem;
+  height: 3rem;
+  background-color: #FFF;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1001;
+  /* Sit on top of everything */
+  border: 1px solid black;
+  /*  opacity: 0;  Hide buttons until carousel is initialised 
+  transition:opacity 1s;*/
+}
+
+.carousel__button--prev {
+  left: 0;
+}
+
+.carousel__button--next {
+  right: 0;
+}
+
+/* Use pseudo elements to insert arrows inside of navigation buttons */
+
+.carousel__button--prev::after, .carousel__button--next::after {
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 54%;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.carousel__button--next::after {
+  left: 47%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}

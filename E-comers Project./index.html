@@ -6,22 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
     <title>Home Page.</title>
 </head>
 
 <body>
     <header>
-        <nav id="navbar">
-            <ul>
-                <li class="logo">
-                    <img src="/img/Capture.png" alt="letters">
-                </li>
+        <nav>
+            <img class="logo" src="/img/Rg.png" alt="logo">
+            <ul class="nav-links">
                 <li><a href="index.html">Home </a></li>
                 <li><a href="products.html">Product</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
     </header>
+
+    <!-- slide Show -->
+    <div class="carousel-wrapper">
+        <div class="carousel">
+
+            <img class="carousel__photo initial" src="/img/camera01.jpeg">
+            <img class="carousel__photo" src="/img/camera2.jpeg">
+            <img class="carousel__photo" src="/img/camera3.jpeg">
+            <img class="carousel__photo" src="img/camera4.jpeg">
+          <img class="carousel__photo" src="img/camera03.jpeg">
+
+
+            <div class="carousel__button--next"></div>
+            <div class="carousel__button--prev"></div>
+
+        </div>
+    </div>
+
+
+
+
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
