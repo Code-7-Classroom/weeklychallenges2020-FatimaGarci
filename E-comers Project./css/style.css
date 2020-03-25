@@ -227,12 +227,12 @@ nav {
   display: grid;
   width: 100px;
   grid-template-columns: auto auto auto auto;
-  grid-gap: 10px;
-  padding: 10px 60px;
+  grid-gap: 15px;
+  padding: 2% 8%;
 }
 .grid-container img{
   width: 325px;
-  height: 230px;
+  height: auto;
 }
 .grid-container h3{
   font-weight: 10px; 
@@ -242,26 +242,24 @@ nav {
 
 /* Tips */
 .Tips-sec{
-  padding-top: 100px;
+  margin-top: 3%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 78%;
-  margin-bottom: 50px;
+  margin-bottom: 5%;
 }
 .Tips-sec iframe{
   float: right;
   width: 630px;
-  height: 350px;
+  height: 310px;
 }
 .Tips-sec h2{
   /* padding-top: 10px; */
   text-align: center;
 }
-.Tips-sec p{
-  padding-top: 18px;
-  padding-left: 10px;
-}
+
+
 /* Mobile Part */
 @media screen and  (max-width: 768px) {
   .grid-container{
@@ -269,7 +267,7 @@ nav {
   }
   .grid-container img{
     width: 144px;
-    height: 90px;
+    height: auto;
   }
 
 }
