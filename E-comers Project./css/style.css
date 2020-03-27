@@ -215,6 +215,7 @@ nav {
   transform: translate(-50%, -50%) rotate(135deg);
 }
 
+
 .carousel__button--next::after {
   left: 47%;
   transform: translate(-50%, -50%) rotate(-45deg);
