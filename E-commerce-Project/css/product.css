@@ -141,7 +141,7 @@
   }
 }
 
-.grid-container > div {
+.grid-container > section {
   /* height: 600px;
   margin: 20px auto; */
   border: 1px solid #aaa;

@@ -110,4 +110,105 @@
     transform: rotate(45deg) translate(-5px, -6px);
   }
   
+  /* Contact */
+ 
+#contactForm{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 100px 100px;
+ }
   
+ .formImage{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/dolphin1.jpeg') no-repeat;
+  background-size: cover;
+  width: 400px;
+  height: 600px;
+  padding: 50px 50px;
+  max-height: 100%;
+  color: white;
+  text-align: center;
+ }
+  
+ form{
+  padding: 50px 50px;
+  background: darkslategray;
+  width: 400px;
+  height: 600px;
+  color: white;
+ }
+  
+ #contactForm .contact-items{
+  margin-bottom: 20px;
+ }
+  
+ #contactForm label {
+  display: block;
+  margin-bottom: 5px;
+ }
+  
+ #contactForm input,
+ #contactForm textarea{
+  width: 100%;
+  padding: 10px;
+  border: 1px #ddd solid;
+ }
+  
+ #contactForm textarea{
+  height: 200px;
+ }
+  
+ #contactForm input:focus,
+ #contactForm textarea:focus{
+  outline: none;
+  border-color: #053031
+ }
+  
+ .btn{
+  background: lightseagreen;
+  padding: 10px 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  text-decoration: none;
+  transition: 0.7s;
+ }
+  
+ .btn:hover{
+  background: #053031;
+ }
+/* Footer */
+ 
+#footer{
+  background: #053031;
+  color: white;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+/* Social Media Links */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+ .fa:hover {
+  opacity: 0.7;
+}
+ .fa-facebook {
+  color: lightseagreen;
+}
+
+.fa-twitter {
+  color: lightseagreen;
+}
+
+.fa-youtube {
+  color: lightseagreen;
+}
+ .fa-instagram {
+  color: lightseagreen;
+}
