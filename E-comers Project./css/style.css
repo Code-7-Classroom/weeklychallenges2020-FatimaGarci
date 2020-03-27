@@ -111,8 +111,6 @@ nav {
   transform: rotate(40deg) translate(-3px, -4px);
 }
 
-
-
 /* Slide Show */
 
 /* Parent wrapper to carousel. Width can be changed as needed. */
@@ -139,7 +137,7 @@ nav {
 
 /* By default we're hiding items (except the initial one) until the JS initiates. Elements are absolutely positioned with a width of 100% (as we're styling for mobile first), letting the content's height dictate the height of the carousel. Our magic property here for all our animation needs is 'transition', taking the properties we wish to animate 'transform' and 'opacity', along with the length of time in seconds. */
 
-.carousel__photo{
+.carousel__photo {
   opacity: 0;
   position: absolute;
   top: 0;
@@ -191,7 +189,7 @@ nav {
   z-index: 1001;
   /* Sit on top of everything */
   border: 1px solid black;
-   /* opacity: 0;  Hide buttons until carousel is initialised 
+  /* opacity: 0;  Hide buttons until carousel is initialised 
   transition:opacity 1s; */
 }
 
@@ -223,61 +221,108 @@ nav {
 }
 
 /* Grid Container */
-.grid-container{
+
+.grid-container {
   display: grid;
   width: 100px;
   grid-template-columns: auto auto auto auto;
   grid-gap: 15px;
   padding: 2% 8%;
 }
-.grid-container img{
+
+.grid-container img {
   width: 325px;
   height: auto;
 }
-.grid-container h3{
-  font-weight: 10px; 
+
+.grid-container h3 {
+  font-weight: 10px;
   font-size: 18px;
   text-align: center;
 }
 
-/* Tips */
-.Tips-sec{
-  margin-top: 3%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 78%;
-  margin-bottom: 5%;
-}
-.Tips-sec iframe{
-  float: right;
-  width: 630px;
-  height: 310px;
-}
-.Tips-sec h2{
-  /* padding-top: 10px; */
-  text-align: center;
-}
+/*Mobile Part */
 
-
-/* Mobile Part */
-@media screen and  (max-width: 768px) {
-  .grid-container{
+@media screen and (max-width: 768px) {
+  .grid-container {
     width: 48%;
   }
-  .grid-container img{
+  .grid-container img {
     width: 144px;
     height: auto;
   }
+}
 
+/* Home Info */
+
+#Tips-sec {
+  width: 95%
+}
+
+#Tips-sec iframe {
+  float: left;
+  width: 730px;
+  height: 310px;
+  padding-left: 50px;
+  padding-right: 20px;
+}
+
+#Tips-sec h2 {
+  text-align: center;
+  margin: 10px;
+  font-weight: 50px;
+  font-size: 40px;
+  /* text-shadow: rgba(0, 0, 0, 0.589); */
+}
+
+#Tips-sec p {
+  padding-left: 30px;
+  padding-right: 20px;
+  font-weight: 22px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* container */
+
+.container {
+  margin-top: 1.5%;
+  position: relative;
+  text-align: center;
+}
+
+.container img {
+  width: 100%;
+}
+
+.top-left {
+  position: absolute;
+  /* top: 50px; */
+  left: 16px;
+  letter-spacing: 4px;
+  word-spacing: 5px;
+  font-size: 50px;
+  text-shadow: 1px 1px 1px black;
+  color: #ffffff;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  width: 35%;
+  letter-spacing: 4px;
+  line-height: 1.6;
+  font-size: 22px;
+  color: #ffffff;
+  text-shadow: 2px 2px 1px black;
 }
 
 /* Footer */
-#main-footer{
+
+/* #main-footer{
   text-align: center;
   background-color: rgb(0, 0, 0, 0.5);
   color: #ffffff;
   padding: 20px;
-}
-
-
+} */
