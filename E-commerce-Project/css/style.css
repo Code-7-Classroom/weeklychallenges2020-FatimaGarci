@@ -285,20 +285,36 @@ nav {
 }
 
 /* container */
-
+/* 
 .container {
   margin-top: 1.5%;
   position: relative;
   text-align: center;
-}
+} */
 
-.container img {
+#Front-Info .background-pictutre img{
+  margin: 15px auto;
   width: 100%;
+  height: auto;
+}
+#Front-Info .over-Box{
+  background-color: #d9a9c88c; 
+  display: block;
+  position: relative;
+  padding: 50px 35px;
+  text-align: center;
+  margin-top: 80px;
+  margin-left: 300px;
+  width: 500px; 
+}
+#Front-Info .over-Box p{
+  color: #FFF;
+  font-size: 30px;
 }
 
-.top-left {
+/* .top-left {
   position: absolute;
-  /* top: 50px; */
+  /* top: 50px; *
   left: 16px;
   letter-spacing: 4px;
   word-spacing: 5px;
@@ -317,7 +333,7 @@ nav {
   font-size: 22px;
   color: #ffffff;
   text-shadow: 2px 2px 1px black;
-}
+} */
 
 /* Footer */
  
