@@ -178,10 +178,9 @@
  .btn:hover{
   background: #053031;
  }
-/* Footer */
- 
+/* Footer */ 
 #footer{
-  background: #053031;
+  background-color: rgb(0, 0, 0, 0.5);
   color: white;
   padding: 20px 20px;
   text-align: center;
@@ -196,19 +195,8 @@
   text-decoration: none;
 }
  .fa:hover {
-  opacity: 0.7;
+  opacity: 0.9;
 }
- .fa-facebook {
-  color: lightseagreen;
-}
-
-.fa-twitter {
-  color: lightseagreen;
-}
-
-.fa-youtube {
-  color: lightseagreen;
-}
- .fa-instagram {
-  color: lightseagreen;
+ .fa-facebook, .fa-twitter,.fa-youtube,.fa-instagram {
+  color: #ffffff;
 }
