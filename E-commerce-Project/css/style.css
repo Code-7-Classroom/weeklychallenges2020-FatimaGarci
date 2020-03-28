@@ -252,6 +252,10 @@ nav {
     width: 144px;
     height: auto;
   }
+  #Front-Info{
+    width:0px;
+    height: 300px;
+  }
 }
 
 /* Home Info */
@@ -285,56 +289,31 @@ nav {
 }
 
 /* container */
-/* 
-.container {
-  margin-top: 1.5%;
-  position: relative;
-  text-align: center;
-} */
-
-#Front-Info .background-pictutre img{
-  margin: 15px auto;
+#Front-Info{
+  background: url("../img/background-pictutre.png") no-repeat;
+  background-size: cover;
   width: 100%;
-  height: auto;
+  height: 500px;
 }
 #Front-Info .over-Box{
   background-color: #d9a9c88c; 
   display: block;
   position: relative;
-  padding: 50px 35px;
+  padding: 80px 35px;
   text-align: center;
-  margin-top: 80px;
-  margin-left: 300px;
+  margin-left: 1100px;
   width: 500px; 
 }
 #Front-Info .over-Box p{
-  color: #FFF;
+  color: rgba(82, 77, 77, 0.918);
   font-size: 30px;
+} 
+#Front-Info .over-Box span{
+  color: rgb(75, 67, 67);
+  font-size: 100px;
+  font-family: cursive;
+  text-shadow: 2px 3px 3px rgb(0, 0, 0);
 }
-
-/* .top-left {
-  position: absolute;
-  /* top: 50px; *
-  left: 16px;
-  letter-spacing: 4px;
-  word-spacing: 5px;
-  font-size: 50px;
-  text-shadow: 1px 1px 1px black;
-  color: #ffffff;
-}
-
-.top-right {
-  position: absolute;
-  top: 8px;
-  right: 16px;
-  width: 35%;
-  letter-spacing: 4px;
-  line-height: 1.6;
-  font-size: 22px;
-  color: #ffffff;
-  text-shadow: 2px 2px 1px black;
-} */
-
 /* Footer */
  
 #footer{
