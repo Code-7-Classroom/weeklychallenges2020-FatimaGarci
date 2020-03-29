@@ -174,12 +174,15 @@ img{
   margin: 0 auto;
   margin-bottom: 50px;
 }
-
+/* 
 .product-price {
   position: absolute;
   bottom: 0;
   left: 50%;
   transform:translateX(-50%);
+} */
+.item__price{
+  display: none;
 }
 /* Footer */
  

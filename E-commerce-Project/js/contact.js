@@ -22,3 +22,29 @@ const navSlide = () => {
   }
   
   navSlide('');
+
+  function validateForm(){
+    var x = document.forms["form"]["email"].value;
+    var y = document.forms["form"]["name"].value;
+    var z = document.forms["form"]["message"].value;
+    var w = document.forms["form"]["lastname"].value;
+    if(x == ""){
+        alert("Fill Out Email");
+        return false;
+    }
+    else if(y == ""){
+        alert("Fill Out Name");
+        return false;
+    }
+    else if (w == "") {
+        alert("Last Name must be filled out");
+        return false;
+      } 
+      else if (z == "") {
+        alert("Message must be filled out");
+        return false;
+      }
+    else{
+        return true;
+    }
+}
