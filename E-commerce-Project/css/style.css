@@ -361,6 +361,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-shadow: 2px 3px 3px rgb(0, 0, 0);
 }
 
 .location-listing:hover .location-title {

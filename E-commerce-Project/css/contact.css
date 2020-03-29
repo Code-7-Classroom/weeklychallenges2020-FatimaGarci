@@ -137,6 +137,7 @@
   font-size: 30px;
   /* height: 100%; */
   color: #FFFF;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0, 0.5);
  }
   
  #contactForm .contact-items{
