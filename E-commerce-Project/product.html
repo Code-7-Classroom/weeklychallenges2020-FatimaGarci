@@ -50,14 +50,15 @@
             </select>
         </div>
         <div class="gridpricefilter">
-            <p  class="filters">Filter Price:</p> <!--for="filterSelect"-->
-                <select id="priceSelect" onchange="priceItems()">
-                    <option value="default">All</option>
-                    <option value="0-500">$0 - $500</option>
-                    <option value="500-1000">$500 - $1000</option>
-                    <option value="1000-2000">$1000 - $2000</option>
-                    <option value="2000-10000">$2000 - max</option>
-                </select>
+            <p class="filters">Filter Price:</p>
+            <!--for="filterSelect"-->
+            <select id="priceSelect" onchange="priceItems()">
+                <option value="default">All</option>
+                <option value="0-500">$0 - $500</option>
+                <option value="500-1000">$500 - $1000</option>
+                <option value="1000-2000">$1000 - $2000</option>
+                <option value="2000-10000">$2000 - max</option>
+            </select>
         </div>
     </form>
     <!-- Product -->
@@ -72,7 +73,8 @@
                 card
                 needs to be formatted before using.</p>
             <p class="product-price">$80</p>
-            <p><span>Type:</span> <span class="item__type">Good</span></p>
+            <span class="item__type">Good</span>
+            <!--<span>Type:</span>-->
             <p class="item__price">0-500</span></p>
         </section>
         <section class="product-item item-2" data-price="150">
@@ -83,9 +85,9 @@
                 quality and approx number of shots recordable to 16 GB memory card
                 3.0-inch LCD with a wide viewing angle allows clear display as well as easy operation and sharing.
             </p>
-            <span class="product-price">$150</span>
-            <p><span>Type:</span> <span class="item__type">Best</span></p>
-            <p class="item__price">0-500</span></p>
+            <span class="product-price">$1050</span>
+            <span class="item__type">Best</span>
+            <p class="item__price">1000-2000</span></p>
         </section>
         <section class="product-item item-3" data-price="200">
             <h2 class="product-title">Halina Tegra AF290 35mm</h2>
@@ -97,7 +99,7 @@
                 wide angle lens, an automatic built-in flash which can't be switched off, an LCD display as exposure
                 counter, and automatic film transport.</p>
             <span class="product-price">$200</span>
-            <p><span>Type:</span> <span class="item__type">Good</span></p>
+            <span class="item__type">Good</span>
             <p class="item__price">0-500</span></p>
         </section>
         <section class="product-item item-4" data-price="200">
@@ -109,7 +111,7 @@
                 other
                 Instax camera, the RF70 allows you to take unique high quality pictures.</p>
             <span class="product-price">$600</span>
-            <p><span>Type:</span> <span class="item__type">Best</span></p>
+            <span class="item__type">Best</span>
             <p class="item__price">500-1000</span></p>
         </section>
         <section class="product-item item-5" data-price="2000">
@@ -119,7 +121,7 @@
                 captures more light, meaning more of everything good—sharpness, contrast, focus speed, low light
                 performance and image quality.</p>
             <span class="product-price">$2000</span>
-            <p><span>Type:</span> <span class="item__type">Best</span></p>
+            <span class="item__type">Best</span>
             <p class="item__price">1000-2000</span></p>
         </section>
         <section class="product-item item-6" data-price="400">
@@ -134,7 +136,7 @@
                 professional
                 Sony ZEISS lens.</p>
             <span class="product-price">$800</span>
-            <p><span>Type:</span> <span class="item__type">Good</span></p>
+            <span class="item__type">Good</span>
             <p class="item__price">500-1000</span></p>
         </section>
         <section class="product-item item-7" data-price="5000">
@@ -147,7 +149,7 @@
                 the
                 moment strikes.</p>
             <span class="product-price">$5000</span>
-            <p><span>Type:</span> <span class="item__type">Best</span></p>
+            <span class="item__type">Best</span>
             <p class="item__price">2000-10000</span></p>
         </section>
         <section class="product-item item-8" data-price="3000">
@@ -161,7 +163,7 @@
                 toughest
                 of conditions.</p>
             <span class="product-price">$3000</span>
-            <p><span>Type:</span> <span class="item__type">Best</span></p>
+            <span class="item__type">Best</span>
             <p class="item__price">2000-10000</span></p>
         </section>
         <section class="product-item item-9" data-price="100">
@@ -175,7 +177,7 @@
                 shooting
                 from smartphones and tablet devices</p>
             <span class="product-price">$100</span>
-            <p><span>Type:</span> <span class="item__type">Good</span></p>
+            <span class="item__type">Good</span>
             <p class="item__price">0-500</span></p>
         </section>
         <section class="product-item item-10" data-price="150">
@@ -186,7 +188,7 @@
                 Compact, In-body 5-axis image stabilization (up to approx. 5. 5 EV steps of compensation)
                 50MP tripod High-Res shot.</p>
             <span class="product-price">$150</span>
-            <p><span>Type:</span> <span class="item__type">Best</span></p>
+            <span class="item__type">Best</span>
             <p class="item__price">0-500</span></p>
         </section>
         <section class="product-item item-11" data-price="260">
@@ -199,7 +201,7 @@
                 flashes
                 mean almost everything is sharp and you can make a photo anywhere.</p>
             <span class="product-price">$660</span>
-            <p><span>Type:</span> <span class="item__type">Good</span></p>
+            <span class="item__type">Good</span>
             <p class="item__price">500-1000</span></p>
         </section>
         <section class="product-item item-12" data-price="500">
@@ -211,7 +213,7 @@
                 or
                 right hand, never worry about unexpected falling off.</p>
             <span class="product-price">$500</span>
-            <p><span>Type:</span> <span class="item__type">Good</span></p>
+            <span class="item__type">Good</span>
             <p class="item__price">0-500</span></p>
         </section>
     </div>
