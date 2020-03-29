@@ -159,6 +159,16 @@
  #contactForm textarea{
   height: 200px;
  }
+ em.error {
+  margin-left: 5px;
+  padding: 2px 4px;
+  background-color: red;
+  color: white;
+  border-radius: 2px;
+}
+.has-error {
+  background-color: yellow;
+}
   
  #contactForm input:focus,
  #contactForm textarea:focus{

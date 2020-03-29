@@ -141,8 +141,8 @@ nav {
   opacity: 0;
   position: absolute;
   top: 0;
-  width: 100%;
-  height: 50%;
+  /* width: 100%; */
+  /* height: 50%; */
   margin: auto;
   padding: 1rem 4rem;
   z-index: 100;
@@ -266,6 +266,7 @@ nav {
   height: 310px;
   padding-left: 50px;
   padding-right: 20px;
+  /* frameborder: 0; */
 }
 
 #Tips-sec h2 {
@@ -380,9 +381,9 @@ img {
       filter: blur(2px);
   }
 }
-/* Footer */
- 
-#footer{
+/*  Footer */
+
+#footer {
   background-color: rgb(0, 0, 0, 0.5);
   color: white;
   padding: 20px 20px;
@@ -390,6 +391,7 @@ img {
 }
 
 /* Social Media Links */
+
 .fa {
   padding: 20px;
   font-size: 30px;
@@ -397,9 +399,11 @@ img {
   text-align: center;
   text-decoration: none;
 }
- .fa:hover {
+
+.fa:hover {
   opacity: 0.9;
 }
- .fa-facebook, .fa-twitter,.fa-youtube,.fa-instagram {
+
+.fa-facebook, .fa-twitter, .fa-youtube, .fa-instagram {
   color: #ffffff;
 }
