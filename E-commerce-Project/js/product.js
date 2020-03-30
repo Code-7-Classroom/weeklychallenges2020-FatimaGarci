@@ -38,7 +38,7 @@ images[3] = "https://images.unsplash.com/photo-1523359247812-29dde5ac53a0?ixlib=
 
 // Change Image
 function changeImg(){
-	document.slide.src = images[i];
+	document.getElementById("slide").src = images[i];
 
 	// Check If Index Is Under Max
 	if(i < images.length - 1){
@@ -58,6 +58,7 @@ window.onload=changeImg;
 
 
 // Filter
+
 var items = document.getElementsByClassName('product-item');
 function filterItems() {
     var type = document.getElementById("filterSelect").value;
