@@ -254,10 +254,10 @@ nav {
 #Tips-sec iframe {
   float: left;
   width: 730px;
-  height: 310px;
+  height: 350px;
   padding-left: 50px;
   padding-right: 20px;
-  /* frameborder: 0; */
+  border: 0;
 }
 
 #Tips-sec h2 {
