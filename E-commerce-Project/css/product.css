@@ -170,7 +170,7 @@ figure img {
   flex-direction: row;
   justify-content: space-evenly;
   font-size: 20px;
-  font-weight: 50px;
+  font-weight: bolder;
   letter-spacing: 5px;
   word-spacing: 5px;
 }

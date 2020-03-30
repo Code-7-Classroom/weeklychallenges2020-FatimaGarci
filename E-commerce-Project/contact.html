@@ -68,23 +68,22 @@
                     Chauvin Louisiana</h3>
             </div>
         </div>
-        <form name="form" class="form-container" onsubmit="return validateForm()" action="/action_page.php method="
-            get">
+        <form class="form-container" >
             <div class="contact-items">
-                <label for="name" id="name" name="name">Name:</label>
-                <input type="text" name="name" placeholder="Your Name..." required>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Your Name..." required>
             </div>
             <div class="contact-items">
-                <label for="lastname" id="lastname" name="lastname">Last name:</label>
-                <input type="text" name="lastname" placeholder="Your Last Name..." required>
+                <label for="lastname" >Last name:</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Your Last Name..." required>
             </div>
             <div class="contact-items">
-                <label for="email" id="email" name="email">Email:</label>
-                <input type="email" name="email" placeholder="Your Email..." required>
+                <label for="email" >Email:</label>
+                <input type="email" name="email" id="email" placeholder="Your Email..." required>
             </div>
             <div class="contact-items">
-                <label for="message" id="message" name="message">Leave a message.</label>
-                <textarea name="message" cols="30" rows="10" placeholder="Type a message" required></textarea>
+                <label for="message">Leave a message.</label>
+                <textarea name="message" cols="30" rows="10"  id="message" placeholder="Type a message" required></textarea>
             </div>
             <button class="btn" type="submit">Submit</button>
         </form>

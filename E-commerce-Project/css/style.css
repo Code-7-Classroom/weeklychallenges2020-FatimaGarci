@@ -126,8 +126,8 @@ nav {
 
 /* We'll be using the 'transform' property to move the carousel's items, so setting the 'transform-style' to 'preserve-3d' will make sure our nested elements are rendered properly in the 3D space. */
 .carousel {
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
+  /* -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d; */
   transform-style: preserve-3d;
 }
 
@@ -228,7 +228,7 @@ nav {
 }
 
 #grid-container h3 {
-  font-weight: 10px;
+  font-weight: bold;
   font-size: 18px;
   text-align: center;
 }
@@ -263,7 +263,7 @@ nav {
 #Tips-sec h2 {
   text-align: center;
   margin: 10px;
-  font-weight: 50px;
+  font-weight: bolder;
   font-size: 40px;
   /* text-shadow: rgba(0, 0, 0, 0.589); */
 }
@@ -271,7 +271,7 @@ nav {
 #Tips-sec p {
   padding-left: 30px;
   padding-right: 20px;
-  font-weight: 22px;
+  /* font-weight: bold; */
   font-size: 16px;
   line-height: 1.9;
 }
@@ -357,19 +357,19 @@ img {
 }
 
 .location-listing:hover .location-title {
-  opacity: 1.8;
+  opacity: 1;
 }
 
 .location-listing:hover .location-image img {
-  filter: blur(2px);
+  filter: blur(3px);
 }
 
 @media (hover: none) {
   .location-title {
-      opacity: 2;
+      opacity: 0.8;
   }
   .location-image img {
-      filter: blur(2px);
+    filter: blur(3px);
   }
 }
 /*  Footer */
