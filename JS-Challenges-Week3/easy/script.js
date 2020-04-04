@@ -2,7 +2,7 @@ var run = exercise('running');
 var swim = exercise('swimming');
 
 function exercise (exerciseType){
-  return ()=> {
+  return function() {
     return "Today's exercise: " + exerciseType;
   };
 }
