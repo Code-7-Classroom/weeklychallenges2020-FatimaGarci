@@ -20,34 +20,72 @@ function Programmer(name, job, age, languages) { }
     If you wrap all of your code inside an IFFE, no global variables are exposed to the JavaScript namespace.
 
 */
-(function() { 
-    function Person(name, age, job) {  /* Answer for #1 */
+/*  Solution for Very Hard question */
+
+(function() { // I wrapped all the code in an IIFE (Immediately Invoked Function Expression / Closure). If you do this, then no global variables are exposed to the JavaScript namespace so we don't have any scope issues
+    function Person(name, age, job) {  // Answer for #1 
         this.name = name;
         this.age = age;
         this.job = job;
     }
 
-    Person.prototype.exercise = function() { /* Answer for #2 */
+    Person.prototype.exercise = function() { // Answer for #2 
         return 'I love exercising!';
-    }
+    };
 
-    Person.prototype.fetchJob = function() { /* Answer for #3 */
-        return  this.name + ' is a ' + this.job + ' developer'; /* We use concatenation to combine the string 'Name' and then print out a variable name */
-    }
+    Person.prototype.fetchJob = function() { // Answer for #3 
+        return  this.name + ' is a ' + this.job + ' developer'; // We use concatenation to combine the string 'Name' and then print out a variable name 
+    };
 
-    function Programmer(name, job, age, languages) { /* Answer for #4 */
-        Person.call(this, name, job, age);
-        this.language = [languages];
+    function Programmer(name, job, age, languages) { // Answer for #4 
+        Person.call(this, name, job, age); // use call because we want to inherit the properties name,job, and age from Person
+        this.languages = languages;
         this.busy = true;
-    }
+    };
+
+    Programmer.prototype.completeTask = function(){  // Answer for #5 part 1 
+        this.busy = false; // make the Progammer not busy so they can accept new tasks 
+    };
+
+    Programmer.prototype.acceptNewtask = function(){ // Answer for #5 part 2 
+        this.busy = true; // make the Progammer busy so they can no longer accept new tasks 
+    };
+
+    Programmer.prototype.offerNewTask = function() { // Answer to #6 
+        if (this.busy) {
+            return 'Sorry, I am busy.';
+        } else {
+            return 'Sure, I can accept a new task!';
+        }
+    };
+
+    Programmer.prototype.listLanguages = function() { // Answer for #7 part 1 
+        return this.languages;
+    };
+
+    Programmer.prototype.learnLanguage = function(newLanguage) { // Answer for #7 part 2 
+        this.languages.push(newLanguage);
+    };
 
 
+    /* Answers for #8 - testing out the object inheritance */
+    var nick = new Person('Nick', 26, 'Front End'); // create a new Person object 
+    console.log(nick.exercise());
+    console.log(nick.fetchJob());
 
-    const dean = new Person('Dean', 26, 'Front End');
-    console.log(dean.exercise());
-    console.log(dean.fetchJob());
-    const nerd = new Programmer();
+    var nerd = new Programmer('Sam', 23, 'Back End', ['Java', 'HTML', 'Python']);
+    
+    console.log(nerd.offerNewTask()); // Sorry, I am busy.
+    nerd.completeTask(); // Complete the task 
+    console.log(nerd.offerNewTask()); // Sure, I can accept a new task! 
 
+    console.log('List of languages before adding any...');
+    console.log(nerd.listLanguages()); // It prints out the array of 3 languages
+    nerd.learnLanguage('CSS'); // Add CSS to the languages array
+    
+    console.log('List of languages after adding one...');
+    console.log(nerd.listLanguages()); // Now it prints out the array of all 4 languages because we successfully added CSS to the languages array 
  
-
 })();
+
+// console.log(nick) - This won't work because we wrapped all the code in a closure. We protected the global scope / namespace.
