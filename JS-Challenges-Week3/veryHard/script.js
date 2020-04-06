@@ -46,7 +46,7 @@ function Programmer(name, job, age, languages) { }
     const dean = new Person('Dean', 26, 'Front End');
     console.log(dean.exercise());
     console.log(dean.fetchJob());
-    const nerd = new Programmer()
+    const nerd = new Programmer();
 
  
 
