@@ -173,7 +173,7 @@
  #contactForm input:focus,
  #contactForm textarea:focus{
   outline: none;
-  border-color: #b670dfad
+  border-color: #b670dfad;
  }
   
  .btn{
