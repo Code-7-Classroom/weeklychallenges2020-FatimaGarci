@@ -167,7 +167,7 @@
   border-radius: 2px;
 }
 .has-error {
-  background-color: yellow;
+  background-color:  #b670dfad;
 }
   
  #contactForm input:focus,
