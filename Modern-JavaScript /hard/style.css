@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+body.red {
+    background-color: red;
+}
+
+body.white {
+    background-color: white;
+}
