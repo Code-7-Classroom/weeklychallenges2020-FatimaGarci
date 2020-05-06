@@ -1,7 +1,7 @@
-const Joi = require('joi/lib');
+//const Joi = require('joi/lib');
 const express = require('express');
 const app = express();
-const data = require('./public/employees.json.js.js');
+const data = require('./public/employees.json');
 
 app.use(express.json());
 //POST METHOD
